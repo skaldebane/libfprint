@@ -113,7 +113,7 @@ static const struct elanmoc2_cmd cmd_get_fw_ver = {
 static const struct elanmoc2_cmd cmd_finger_info = {
   .cmd = {0xff, 0x12},
   .out_len = 4,
-  .in_len = 64,
+  .in_len = 70,
   .ep_in = ELANMOC2_EP_CMD_IN,
 };
 
@@ -211,5 +211,6 @@ static const FpIdEntry elanmoc2_id_table[] = {
   {.vid = ELANMOC2_VEND_ID, .pid = 0x0c00, .driver_data = ELANMOC2_ALL_DEV},
   {.vid = ELANMOC2_VEND_ID, .pid = 0x0c4c, .driver_data = ELANMOC2_ALL_DEV},
   {.vid = ELANMOC2_VEND_ID, .pid = 0x0c5e, .driver_data = ELANMOC2_DEV_0C5E},
+  {.vid = ELANMOC2_VEND_ID, .pid = 0x0ca2, .driver_data = ELANMOC2_ALL_DEV},
   {.vid = 0, .pid = 0, .driver_data = ELANMOC2_DEV_0C4C}
 };
