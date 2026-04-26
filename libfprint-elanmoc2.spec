@@ -5,7 +5,7 @@ Summary:        Toolkit for fingerprint scanner (with elanmoc2 support)
 
 License:        LGPL-2.1-or-later
 URL:            https://github.com/skaldebane/libfprint/tree/elanmoc2
-Source0:        https://github.com/skaldebane/libfprint/archive/elanmoc2/libfprint-%{version}.tar.gz
+Source0:        https://github.com/skaldebane/libfprint/archive/refs/heads/elanmoc2.tar.gz
 
 # Exclude architectures where fingerprint readers don't exist
 ExcludeArch:    s390 s390x
@@ -60,7 +60,7 @@ The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
 %prep
-%autosetup -n libfprint-elanmoc2-%{version}
+%autosetup -n libfprint-elanmoc2
 
 %build
 %meson \
