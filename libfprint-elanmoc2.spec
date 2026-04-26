@@ -27,6 +27,7 @@ BuildRequires:  gobject-introspection-devel
 BuildRequires:  python3-cairo
 BuildRequires:  python3-gobject
 BuildRequires:  cairo-devel
+BuildRequires:  pkgconfig(openssl)
 BuildRequires:  umockdev >= 0.13.2
 BuildRequires:  valgrind
 
